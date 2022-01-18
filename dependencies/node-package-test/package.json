@@ -1,0 +1,22 @@
+{
+  "name": "package-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jessicaplant/cat-fetcher.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jessicaplant/cat-fetcher/issues"
+  },
+  "homepage": "https://github.com/jessicaplant/cat-fetcher#readme",
+  "dependencies": {
+    "axios": "^0.25.0"
+  }
+}
