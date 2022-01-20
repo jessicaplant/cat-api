@@ -2,11 +2,13 @@ const express = require('express');
 const app = express();
 const port = 8000;
 const {getCats, analyseCats} = require('./dependencies/node-package-test/index');
-const preparedResponse = require('./dependencies/responses-ahoy/index.js');
+const preparedResponse = require('./dependencies/responses-ahoy/index');
+const DbHole = require('./dependencies/db-hole/index')
 
 app.get('/', function (req, res) {
     getCats()
         .then((kitties) => {
+            const connection = new DbHole()
             console.log('got kitties...');
             analyseCats(kitties).then(() => {
                 console.log('data about kitties');
